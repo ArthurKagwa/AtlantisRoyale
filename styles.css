@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
     background-color: rgb(134, 103, 66);
 }
@@ -17,6 +17,16 @@ body{
     }
 h1:hover{
     transform: scale(1.2);
+    transition: 2s;
+}
+a{
+    text-decoration: none;
+}
+a:default{
+    color: black;
+}
+a:visited{
+    color: rgb(86, 84, 23);
 }
 .in-header{
     width:70%;
@@ -27,28 +37,37 @@ h1:hover{
 .bar{
     height: 100px;
 }
-.parts{
+
+.strip div[class^="part"]{
     text-align: center;
     display: inline-block;
     padding: 20px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
     border:solid rgb(249, 180, 6);
-}
-.in-strip{
-    font-size: 25px;
-    text-align: center;
     
 }
+
+    
+
 .strip p{
+    padding: 0;
+    margin: 0;
     font-size: 15px;
     font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* margin-bottom: 0px; */
 }
 .strip{
     background-color: antiquewhite;
     margin-left:auto;
     margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+   
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    /* display: inline-block; */
 }
 p{
     font-size: 15px;
@@ -79,11 +98,12 @@ text-align: center;
     background-color: antiquewhite;
 }
 .pics:hover{
-    transform: scale(1.2);
+    transform: scale(1.08);
+    transition: 2s;
 }
 .pics{
 
-    margin: auto;
+    margin:auto  ;
     display: inline-flex;
 
     width: 700px;
@@ -93,17 +113,115 @@ text-align: center;
 }
 img{
     height: 450px;
-    
+    object-fit: cover;
+    max-width: 700px;
 }
 img:hover{
     filter:url();
-    transform: scale(1.1);
+    transform: scale(1.08);
+    transition: 2s;
 }
-.pics::-webkit-scrollbar{
+/* .pics::-webkit-scrollbar{
     display: none;
 
-}
-.parts:hover{
+} */
+div[class^="part"]:hover{
     color:white;
     background-color: rgba(218, 165, 32, 0.68);
+    border-bottom: solid rgb(31, 11, 11) 3px;
+}
+
+.button-wraper{
+    text-align: center;
+    height: 100px;
+    
+    
+}
+
+.but{
+    border: none;
+    margin:30px 20px;
+    border-radius:50%;
+    height: 15px;
+    background-color:rgb(3, 19, 19,.2);
+    width: 15px;
+}
+.but:hover{
+    background-color:rgb(3, 19, 19,.5);
+}
+.hover-restaurant{
+    display:none;
+    width: 500px;
+    margin-left: 200px;
+    background-color: rgb(134, 103, 66);
+    color: white;
+    margin-top: 5px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+}
+.hover-accomodation{
+    display:none;
+    width: 500px;
+    margin-left: 750px;
+    background-color: rgb(134, 103, 66);
+    color: white;
+    margin-top: 5px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    transition: 2s;
+}
+.hover-pool{
+    display:none;
+    width: 500px;
+    margin-left: 390px;
+    background-color: rgb(134, 103, 66);
+    color: white;
+    margin-top: 5px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+}
+.hover-conference{
+    display:none;
+    width: 500px;
+    margin-left: 540px;
+    background-color: rgb(134, 103, 66);
+    color: white;
+    margin-top: 5px;
+    padding: 20px;
+    position: absolute;
+}
+.hover-bar{
+    display:none;
+    width: 500px;
+    margin-left: 300px;
+    background-color: rgb(134, 103, 66);
+    color: white;
+    margin-top: 5px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+}
+p.in{
+    font-size: 20px;
+    padding: 0%;
+    margin: 1px;
+
+}
+.parts-bar:hover ~ .hover-bar {
+    display: block;
+}
+.parts-pool:hover ~ .hover-pool {
+    display: block;
+}
+.parts-accomodation:hover ~ .hover-accomodation{
+    display: block;
+}
+.parts-restaurant:hover ~ .hover-restaurant {
+    display: block;
+}
+.parts-conference:hover ~ .hover-conference {
+    display: block;
 }
