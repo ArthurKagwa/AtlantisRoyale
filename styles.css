@@ -1,0 +1,103 @@
+body{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(134, 103, 66);
+}
+
+    .header{
+        background-image: url('sunset.jpeg');
+        background-size: cover; /* Add this line */
+        background-position: center; /* Optional: Center the image */
+        height: 500px;
+        text-align: center;
+        margin: auto;
+        padding-top: 50px;
+        
+    }
+
+.in-header{
+    width:70%;
+    margin: auto;
+    font-size: 60px;
+    color:rgb(249, 180, 6);
+}
+.bar{
+    height: 100px;
+}
+.parts{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border:solid rgb(249, 180, 6);
+}
+.in-strip{
+    font-size: 25px;
+    text-align: center;
+    
+}
+.strip p{
+    font-size: 15px;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.strip{
+    background-color: antiquewhite;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    font-size: 15px;
+}
+.message{
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.content{
+    padding: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(245, 216, 179);
+}
+.with-pics{
+    display: grid;
+text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: antiquewhite;
+}
+.pics:hover{
+    transform: scale(1.2);
+}
+.pics{
+
+    margin: auto;
+    display: inline-flex;
+
+    width: 700px;
+    overflow-x: auto;
+    
+    
+}
+img{
+    height: 400px;
+    
+}
+img:hover{
+    filter:url();
+    transform: scale(1.1);
+}
+.pics::-webkit-scrollbar{
+    display: none;
+
+}
