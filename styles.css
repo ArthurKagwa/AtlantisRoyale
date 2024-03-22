@@ -15,7 +15,9 @@ body{
         padding-top: 50px;
         
     }
-
+h1:hover{
+    transform: scale(1.2);
+}
 .in-header{
     width:70%;
     margin: auto;
@@ -90,7 +92,7 @@ text-align: center;
     
 }
 img{
-    height: 400px;
+    height: 450px;
     
 }
 img:hover{
@@ -100,4 +102,8 @@ img:hover{
 .pics::-webkit-scrollbar{
     display: none;
 
+}
+.parts:hover{
+    color:white;
+    background-color: rgba(218, 165, 32, 0.68);
 }
