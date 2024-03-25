@@ -225,3 +225,50 @@ p.in{
 .parts-conference:hover ~ .hover-conference {
     display: block;
 }
+.bedpics{
+    display: grid;
+    text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        background-color: antiquewhite;
+}
+.book div{
+    text-align:center;
+
+    padding:20px;
+    background-color: rgb(208, 182, 147);
+    font-style:italic ;
+    text-transform:capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:inline-block;
+    padding: 20px;
+    margin-top: 20px;
+}
+.book{
+
+    background-color: rgb(144, 106, 68);
+    margin-left:auto;
+    margin-right: auto;
+   
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.container{
+display:flex;
+text-align: center;
+}
+.bedpicksking{
+
+padding:10px;
+}
+.palm{
+display:list-item;
+padding:10px;
+}
+.div h1{
+width:fit-content;
+
+}
