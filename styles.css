@@ -3,7 +3,10 @@ body{
     text-align: center;
     /* width: 80%; */
     margin: auto;
-    background-color: rgb(134, 103, 66);
+    background-color: antiquewhite;
+}
+div{
+    box-sizing: border-box;
 }
 
 
@@ -52,8 +55,8 @@ a:visited{
  div[class^="part"]{
     text-align: center;
     display: inline-block;
-    padding: 20px;
-    margin-top: 20px;
+    padding:15px;
+    
     margin-bottom: 0px;
     margin-left: 5px;
     margin-right: 5px;
@@ -83,10 +86,13 @@ p{
     margin-left:auto;
     margin-right: auto;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding: 5px;
     text-align: center;
     z-index: 100;
     border-bottom: solid rgba(218, 165, 32, 0.579) 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+    
 }
 .message{
     width: 60%;
@@ -102,7 +108,7 @@ p{
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: rgb(245, 216, 179);
+    
     z-index: 1;
 }
 /* gallery */
@@ -215,233 +221,6 @@ div[class^=hover]{
     margin: auto;
     padding-top: 50px;
 }
-body{
-    text-align: center;
-    /* width: 80%; */
-    margin: auto;
-    background-color: rgb(134, 103, 66);
-}
-
-    .header{
-        background-image: url('sunset.jpeg');
-        background-size: cover; /* Add this line */
-        background-position: center; /* Optional: Center the image */
-        height: 500px;
-        text-align: center;
-        margin: auto;
-        padding-top: 50px;
-        
-    }
-h1:hover{
-    transform: scale(1.2);
-    transition: 2s;
-}
-a{
-    text-decoration: none;
-}
-a:default{
-    color: black;
-}
-a:visited{
-    color: rgb(86, 84, 23);
-}
-.in-header{
-    width:70%;
-    margin: auto;
-    font-size: 60px;
-    color:rgb(249, 180, 6);
-}
-.bar{
-    height: 100px;
-}
-
-.strip div[class^="part"]{
-    text-align: center;
-    display: inline-block;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border:solid rgb(249, 180, 6);
-    
-}
-
-    
-
-.strip p{
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /* margin-bottom: 0px; */
-}
-.strip{
-    background-color: antiquewhite;
-    margin-left:auto;
-    margin-right: auto;
-   
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    text-align: center;
-    /* display: inline-block; */
-}
-p{
-    font-size: 15px;
-}
-.message{
-    width: 60%;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
-.content{
-    padding: 10px;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: rgb(245, 216, 179);
-}
-.with-pics{
-    display: grid;
-text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    background-color: antiquewhite;
-}
-.pics:hover{
-    transform: scale(1.08);
-    transition: 2s;
-}
-.pics{
-
-    margin:auto  ;
-    display: inline-flex;
-
-    width: 700px;
-    overflow-x: auto;
-    
-    
-}
-img{
-    height: 450px;
-    object-fit: cover;
-    max-width: 700px;
-}
-img:hover{
-    filter:url();
-    transform: scale(1.08);
-    transition: 2s;
-}
-/* .pics::-webkit-scrollbar{
-    display: none;
-
-} */
-div[class^="part"]:hover{
-    color:white;
-    background-color: rgba(218, 165, 32, 0.68);
-    border-bottom: solid rgb(31, 11, 11) 3px;
-}
-
-.button-wraper{
-    text-align: center;
-    height: 100px;
-    
-    
-}
-
-.but{
-    border: none;
-    margin:30px 20px;
-    border-radius:50%;
-    height: 15px;
-    background-color:rgb(3, 19, 19,.2);
-    width: 15px;
-}
-.but:hover{
-    background-color:rgb(3, 19, 19,.5);
-}
-.hover-restaurant{
-    display:none;
-    width: 500px;
-    margin-left: 200px;
-    background-color: rgb(134, 103, 66);
-    color: white;
-    margin-top: 5px;
-    padding: 20px;
-    position: absolute;
-    z-index: 1;
-}
-.hover-accomodation{
-    display:none;
-    width: 500px;
-    margin-left: 750px;
-    background-color: rgb(134, 103, 66);
-    color: white;
-    margin-top: 5px;
-    padding: 20px;
-    position: absolute;
-    z-index: 1;
-    transition: 2s;
-}
-.hover-pool{
-    display:none;
-    width: 500px;
-    margin-left: 390px;
-    background-color: rgb(134, 103, 66);
-    color: white;
-    margin-top: 5px;
-    padding: 20px;
-    position: absolute;
-    z-index: 1;
-}
-.hover-conference{
-    display:none;
-    width: 500px;
-    margin-left: 540px;
-    background-color: rgb(134, 103, 66);
-    color: white;
-    margin-top: 5px;
-    padding: 20px;
-    position: absolute;
-}
-.hover-bar{
-    display:none;
-    width: 500px;
-    margin-left: 300px;
-    background-color: rgb(134, 103, 66);
-    color: white;
-    margin-top: 5px;
-    padding: 20px;
-    position: absolute;
-    z-index: 1;
-}
-p.in{
-    font-size: 20px;
-    padding: 0%;
-    margin: 1px;
-
-}
-.parts-bar:hover ~ .hover-bar {
-    display: block;
-}
-.parts-pool:hover ~ .hover-pool {
-    display: block;
-}
-.parts-accomodation:hover ~ .hover-accomodation{
-    display: block;
-}
-.parts-restaurant:hover ~ .hover-restaurant {
-    display: block;
-}
-.parts-conference:hover ~ .hover-conference {
-    display: block;
-}
 .bedpics{
     display: grid;
     text-align: center;
@@ -473,19 +252,39 @@ p.in{
     padding-bottom: 20px;
     text-align: center;
 }
-.container{
-display:flex;
-text-align: center;
-}
-.bedpicksking{
 
-padding:10px;
-}
-.palm{
-display:list-item;
-padding:10px;
-}
+
+
 .div h1{
 width:fit-content;
 
 }
+.king{
+    background-image: url("images/roomm.webp");
+    background-position: center;
+    height: 500px;
+    color: rgb(252, 252, 249);
+    font-size: 40px;
+    margin: auto;
+    padding: 70px;
+    
+    width:80%;
+    margin-top: 20px;
+
+}
+.text{
+    background-color: antiquewhite;
+    max-width :60%;
+    margin: auto;
+    margin-top: 20px;
+    height:150px;
+    padding: 20px;
+   
+}
+
+.pica{
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+}
+
