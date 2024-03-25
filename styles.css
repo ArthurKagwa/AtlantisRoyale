@@ -1,4 +1,221 @@
 body{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    /* width: 80%; */
+    margin: auto;
+    background-color: rgb(134, 103, 66);
+}
+
+
+    .header{
+        background-image: url('sunset.jpeg');
+        background-size: cover; 
+        background-position:center; 
+        height: 300px;
+        text-align: center;
+        /* margin: auto; */
+        padding-top: 50px;
+        top:0;
+        z-index: 700;  
+        
+    }
+  .header h1{
+    width: 70%;
+    margin: auto ;
+    font-size: 100px;
+        color:rgb(249, 180, 6); 
+  }
+ 
+    
+    
+h1:hover{
+    
+    transform: scale(1.3);
+    transition: 1.5s;
+}
+hr{
+    height: 3px;
+    width:90%;
+    background-color:rgb(86, 84, 23) ;
+}
+a{
+    text-decoration: none;
+}
+a:default{
+    color: black;
+}
+a:visited{
+    color: rgb(86, 84, 23);
+}
+
+
+ div[class^="part"]{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border:solid rgb(249, 180, 6);
+    transition: all 1s;
+    
+}
+div[class^="part"]:hover{
+    color:white;
+    background-color: rgba(218, 165, 32, 0.68);
+    border-bottom: solid rgb(31, 11, 11) 3px;
+    transform: scaleX(1.1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* width:600px; */
+}
+
+
+p{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    
+}
+.strip{
+    background-color: antiquewhite;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    z-index: 100;
+    border-bottom: solid rgba(218, 165, 32, 0.579) 4px;
+}
+.message{
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.content{
+    padding: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(245, 216, 179);
+    z-index: 1;
+}
+/* gallery */
+.with-pics{
+    display: grid;
+text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+    z-index: 3;
+    
+}
+.pics img:hover{
+    filter:url();
+    transform: scale(1.08);
+    transition: 2s;
+}
+.pics:hover{
+    transform: scale(1.08);
+    transition: 2s;
+}
+.pics img{
+    height: 450px;
+    object-fit: cover;
+    max-width: 700px;
+}
+.pics{
+    margin:auto  ;
+    display: inline-flex;
+    width: 700px;
+    overflow-x: auto;    
+}
+
+.button-wraper{
+    text-align: center;
+    height: 100px;
+}
+
+/* strip */
+
+.image img{ 
+    object-fit: cover;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.but{
+    border: none;
+    margin:30px 20px;
+    border-radius:50%;
+    height: 15px;
+    background-color:rgb(3, 19, 19,.2);
+    width: 15px;
+}
+.but:hover{
+    background-color:rgb(3, 19, 19,.5);
+}
+div[class^=hover]{
+    display:none;
+    max-width: 500px;
+    background-color: rgb(134, 103, 66);
+    color: white;
+    margin-top: 5px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 2px;
+    width: 600px;
+    opacity: 0.1;
+    transition:  2s;
+}
+.parts-bar:hover ~ .hover-bar {
+    display: block;
+    opacity: .99;
+    margin-left: 450px;
+    transition: all 2s;
+     
+}
+.parts-pool:hover ~ .hover-pool {
+    display: block;
+    margin-left: 490px;
+    opacity: .99;
+    transition: all 2s;
+}
+.parts-accomodation:hover ~ .hover-accomodation{
+    display: block;
+    margin-left: 850px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.parts-restaurant:hover ~ .hover-restaurant {
+    display: block;
+    margin-left: 300px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.parts-conference:hover ~ .hover-conference {
+    display: block;
+    transition: opacity 2s;
+    margin-left: 300px;
+    opacity: 1;
+}
+.footer{
+    background-image: url('sunset.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+body{
     text-align: center;
     /* width: 80%; */
     margin: auto;
