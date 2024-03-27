@@ -13,14 +13,13 @@ window.addEventListener('scroll', function() {
         header.style.width = '100%';
         header.style.height = '40px'; // Adjust this value to your needs
         strip.style.position = 'fixed';
-         strip.style.top = '40px';
-         strip.style.width = '100%';
-         content.style.position =  'relative';
-         content.style.top =  '200px';
-         
-         strip.style.transition  = 'all 0.5s';
-         word.style.fontSize = '30px';
-         word.style.transition = '0.5s';
+        strip.style.top = '40px';
+        strip.style.width = '100%';
+        content.style.position =  'relative';
+        content.style.top =  '200px';    
+        strip.style.transition  = 'all 0.5s';
+        word.style.fontSize = '30px';
+        word.style.transition = '0.5s';
 
     } else {
         content.style.position =  'initial';

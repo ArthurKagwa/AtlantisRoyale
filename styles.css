@@ -11,7 +11,7 @@ div{
 
 
     .header{
-        background-image: url('sunset.jpeg');
+        background-image: url('images/sunset.jpeg');
         background-size: cover; 
         background-position:center; 
         height: 300px;
@@ -43,6 +43,7 @@ hr{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 a:default{
     color: black;
@@ -93,6 +94,60 @@ p{
     margin-top: 0;
     margin-bottom: 0;
     
+}
+div[class^=hover]{
+    display:none;
+    max-width: 500px;
+    background-color: rgb(134, 103, 66);
+    color: white;
+    margin-top: 5px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 2px;
+    width: 600px;
+    opacity: 0.1;
+    transition:  2s;
+    background-image: url("images\woman.jpg");
+}
+
+.parts-bar:hover ~ .hover-bar {
+    display: block;
+    opacity: .99;
+    margin-left: 450px;
+    transition: all 2s;
+     
+}
+.parts-pool:hover ~ .hover-pool {
+    display: block;
+    margin-left: 490px;
+    opacity: .99;
+    transition: all 2s;
+    background-image: url("images\woman.jpg");
+}
+.parts-accomodation:hover ~ .hover-accomodation{
+    display: block;
+    margin-left: 850px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.parts-restaurant:hover ~ .hover-restaurant {
+    display: block;
+    margin-left: 300px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.parts-conference:hover ~ .hover-conference {
+    display: block;
+    transition: opacity 2s;
+    margin-left: 300px;
+    opacity: 1;
+}
+.image img{ 
+    object-fit: cover;
+    max-width: 450px;
+    max-height: 500px;
+    border-radius: 10px;
 }
 .message{
     width: 60%;
@@ -150,11 +205,7 @@ text-align: center;
 
 /* strip */
 
-.image img{ 
-    object-fit: cover;
-    max-width: 500px;
-    max-height: 500px;
-}
+
 
 .but{
     border: none;
@@ -167,51 +218,7 @@ text-align: center;
 .but:hover{
     background-color:rgb(3, 19, 19,.5);
 }
-div[class^=hover]{
-    display:none;
-    max-width: 500px;
-    background-color: rgb(134, 103, 66);
-    color: white;
-    margin-top: 5px;
-    padding: 20px;
-    position: absolute;
-    z-index: 1;
-    margin-left: 2px;
-    width: 600px;
-    opacity: 0.1;
-    transition:  2s;
-}
-.parts-bar:hover ~ .hover-bar {
-    display: block;
-    opacity: .99;
-    margin-left: 450px;
-    transition: all 2s;
-     
-}
-.parts-pool:hover ~ .hover-pool {
-    display: block;
-    margin-left: 490px;
-    opacity: .99;
-    transition: all 2s;
-}
-.parts-accomodation:hover ~ .hover-accomodation{
-    display: block;
-    margin-left: 850px;
-    opacity: 1;
-    transition: opacity 2s;
-}
-.parts-restaurant:hover ~ .hover-restaurant {
-    display: block;
-    margin-left: 300px;
-    opacity: 1;
-    transition: opacity 2s;
-}
-.parts-conference:hover ~ .hover-conference {
-    display: block;
-    transition: opacity 2s;
-    margin-left: 300px;
-    opacity: 1;
-}
+
 .footer{
     background-image: url('sunset.jpeg');
     background-size: cover; 
@@ -264,27 +271,94 @@ width:fit-content;
     background-position: center;
     height: 500px;
     color: rgb(252, 252, 249);
-    font-size: 40px;
+    font-size: 30px;
     margin: auto;
     padding: 70px;
-    
-    width:80%;
-    margin-top: 20px;
+    transition: all 1s;
+    width:65%;
+    vertical-align: top;
+    display: inline-block;
 
 }
+.inlinediv {
+    max-height: 580px;
+   padding-top: 30px;
+   width: 100%;
+    /* align-items: flex-start; */
+
+
+}
+
 .text{
     background-color: antiquewhite;
-    max-width :60%;
+    max-width :30%;
     margin: auto;
-    margin-top: 20px;
-    height:150px;
-    padding: 20px;
+    
+    height:500px;
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+    border-left: goldenrod solid 3px;
+    border-right: goldenrod solid 3px;
+    margin-left: 20px;
    
 }
 
 .pica{
     width: 80%;
+    margin-top:0;
     margin: auto;
     padding: 40px;
 }
+/* form */
+.booking-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background: #fff;
+}
+.form{
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    width: 75%;
+    margin: auto;
+    border: solid goldenrod 3px ;
+    border-radius: 10px;
+    
+  
+}
 
+.set {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* footer */
+.footer{
+    height: 400px;
+    background-color: rgb(77, 61, 22);
+    color: antiquewhite;
+    
+}
