@@ -22,11 +22,52 @@ window.addEventListener('scroll', function() {
         word.style.transition = '0.5s';
 
     } else {
-        content.style.position =  'initial';
+        content.style.position =  'static';
         header.style.position = 'static';
         header.style.height = '300px'; // Reset to original height
-        strip.style.position = 'initial';
+        strip.style.position = 'static';
         header.style.padding = '50px';
         word.style.fontSize = '90px';
     }
 });
+var slideIndex=1;
+showSlides(slideIndex);
+function plusSlides(n){
+    showSlides(slideIndex+=n)
+}
+var flag=false;
+function showSlides(n){
+    var i;
+    var slides =document.getElementsByClassName("wrapper");
+    var dots=document.getElementsByClassName("dot");
+    if (n>slides.length){
+
+    }
+    if (n<1) {
+        
+    }
+}
+document.querySelector('.night').addEventListener('click', night);
+function night() {
+    var body = document.querySelector('.content');
+    var strip = document.querySelector('.strip');
+    var link=document.querySelector('.ll');
+    
+    if (flag) {
+
+        body.style.backgroundColor = 'antiquewhite';
+    body.style.color = 'black';
+    strip.style.backgroundColor = 'antiquewhite';
+    strip.style.color = 'black';
+    flag=false;
+    link.style.color='black';
+    }
+    else{
+        flag=true;
+        body.style.backgroundColor = '#011012';
+    body.style.color = 'antiquewhite';
+    strip.style.backgroundColor = '#011012';
+    strip.style.color = 'antiquewhite';
+    link.style.color='goldenrod';
+    }
+}

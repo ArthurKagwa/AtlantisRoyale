@@ -19,7 +19,7 @@ div{
         /* margin: auto; */
         padding-top: 50px;
         top:0;
-        z-index: 700;  
+        z-index:10;  
         
     }
   .header h1{
@@ -75,7 +75,9 @@ div[class^="part"]:hover{
     /* width:600px; */
 }
 
-
+.night{
+    margin-right: 100px;
+}
 p{
     padding: 0;
     margin: 0;
@@ -89,7 +91,7 @@ p{
     margin-bottom: 0px;
     padding: 5px;
     text-align: center;
-    z-index: 100;
+    z-index: 3;
     border-bottom: solid rgba(218, 165, 32, 0.579) 4px;
     margin-top: 0;
     margin-bottom: 0;
@@ -102,46 +104,59 @@ div[class^=hover]{
     color: white;
     margin-top: 5px;
     padding: 20px;
+    padding-top: 80px;
     position: absolute;
-    z-index: 1;
-    margin-left: 2px;
     width: 600px;
-    opacity: 0.1;
-    transition:  2s;
-    background-image: url("images\woman.jpg");
+    height: 300px;
 }
-
+div[class^=hover] div{
+    background-color: #0f080882;
+    color: rgb(246, 237, 145);
+    padding: 20px;
+    border-left: solid goldenrod 3px;
+    height: 100px;
+}
+.hover-bar{
+    background-image: url("images/bar.jpeg");
+    background-position: center;
+    
+}
+.hover-restaurant{
+    background-image: url("images/restaurant.jpeg");
+    background-position:center;
+    
+}
 .parts-bar:hover ~ .hover-bar {
     display: block;
-    opacity: .99;
-    margin-left: 450px;
-    transition: all 2s;
-     
+    margin-left: 450px;    
+}
+.hover-pool{
+    background-image: url("images/woman.jpg");
+    background-position:center
+}
+.hover-conference{
+    background-image:url("images/Conference\ Hall\ 018.jpeg");
+    background-position: center;
 }
 .parts-pool:hover ~ .hover-pool {
     display: block;
     margin-left: 490px;
-    opacity: .99;
-    transition: all 2s;
-    background-image: url("images\woman.jpg");
+}
+.hover-accomodation{
+    background-image: url("images/bedroom.png");
+    background-position:center;
 }
 .parts-accomodation:hover ~ .hover-accomodation{
     display: block;
-    margin-left: 850px;
-    opacity: 1;
-    transition: opacity 2s;
+    margin-left: 750px;
 }
 .parts-restaurant:hover ~ .hover-restaurant {
     display: block;
     margin-left: 300px;
-    opacity: 1;
-    transition: opacity 2s;
 }
 .parts-conference:hover ~ .hover-conference {
     display: block;
-    transition: opacity 2s;
-    margin-left: 300px;
-    opacity: 1;
+    margin-left: 550px;
 }
 .image img{ 
     object-fit: cover;
@@ -163,11 +178,11 @@ div[class^=hover]{
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    
+    background-color: antiquewhite;
     z-index: 1;
 }
 /* gallery */
-.with-pics{
+/* .with-pics{
     display: grid;
 text-align: center;
     padding-top: 50px;
@@ -176,26 +191,43 @@ text-align: center;
     background-color: antiquewhite;
     z-index: 3;
     
-}
-.pics img:hover{
-    filter:url();
-    transform: scale(1.08);
-    transition: 2s;
-}
-.pics:hover{
-    transform: scale(1.08);
-    transition: 2s;
-}
-.pics img{
+
+} */
+.wrapper{
+    overflow: -moz-hidden-unscrollable;
     height: 450px;
-    object-fit: cover;
+    /* object-fit: cover; */
     max-width: 700px;
 }
-.pics{
-    margin:auto  ;
+.ptext{
+    position: absolute;
+    z-index: 10;
+}
+.wrapper img:hover{
+    
+    transform:scale(1.05);
+    transition: 1s;
+}
+
+.wrapper img{
+    height: 450px;
+    object-fit: cover;
+    max-width: 800px;
+}
+.wrapper{
+    margin:auto 30px ;
+    
+    max-width: 700px;
+        
+}
+.with-pics{
+    margin:50px  ;
+    margin-bottom: 0;
     display: inline-flex;
-    width: 700px;
-    overflow-x: auto;    
+    max-width: 700px;
+    overflow-x: auto;   
+    overflow-y: hidden;
+    text-align: center;
 }
 
 .button-wraper{
@@ -211,9 +243,9 @@ text-align: center;
     border: none;
     margin:30px 20px;
     border-radius:50%;
-    height: 15px;
+   height: 30px;
     background-color:rgb(3, 19, 19,.2);
-    width: 15px;
+
 }
 .but:hover{
     background-color:rgb(3, 19, 19,.5);
@@ -235,7 +267,7 @@ text-align: center;
         padding-bottom: 50px;
         width: 100%;
         backdrop-filter: blur(10px);
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
 }
 .book div{
     text-align:center;
@@ -267,10 +299,10 @@ width:fit-content;
 
 }
 .king{
-    background-image: url("images/roomm.webp");
+    background-image: url("images/bedroom.png");
     background-position: center;
     height: 500px;
-    color: rgb(252, 252, 249);
+    color: rgb(178, 134, 24);
     font-size: 30px;
     margin: auto;
     padding: 70px;
@@ -290,7 +322,7 @@ width:fit-content;
 }
 
 .text{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     max-width :30%;
     margin: auto;
     
@@ -315,7 +347,7 @@ width:fit-content;
     width: 500px;
     margin: 0 auto;
     padding: 50px;
-    background: #fff;
+    /* background: #fff; */
 }
 .form{
     padding: 20px;
