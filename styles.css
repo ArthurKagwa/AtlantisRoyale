@@ -388,9 +388,42 @@ button {
 
 
 /* footer */
-.footer{
+/*.footer{
     height: 400px;
     background-color: rgb(77, 61, 22);
     color: antiquewhite;
     
+}*/
+.roomlist {
+    text-align:left;
+    height:15px;;
+    width:80%;
+    
+}
+.roomlist h1{
+    text-align:center;
+    font-size:50px;
+    text-underline-position: auto;
+    padding-top:50%;
+    border:black;
+    border-color:bisque;
+
+    
+}
+.roomlist p{
+    font: size 6px; 
+    
+    text-align:center;
+    display:inline-flex;
+    padding:15px;
+    
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border:solid rgb(195, 148, 29);
+    transition: all 1s;
+}
+.amenities{
+    display:inline-block;
+    align-items: baseline;
 }
