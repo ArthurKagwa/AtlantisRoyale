@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
         header.style.transition  = 'all 1.5s';
         header.style.padding = '10px';
         header.style.width = '100%';
-        header.style.height = '40px'; // Adjust this value to your needs
+        header.style.height = '40px'; 
         strip.style.position = 'fixed';
         strip.style.top = '40px';
         strip.style.width = '100%';
@@ -24,39 +24,23 @@ window.addEventListener('scroll', function() {
     } else {
         content.style.position =  'static';
         header.style.position = 'static';
-        header.style.height = '300px'; // Reset to original height
+        header.style.height = '300px'; 
         strip.style.position = 'static';
         header.style.padding = '50px';
         word.style.fontSize = '90px';
     }
 });
-var slideIndex=1;
-showSlides(slideIndex);
-function plusSlides(n){
-    showSlides(slideIndex+=n)
-}
-var flag=false;
-function showSlides(n){
-    var i;
-    var slides =document.getElementsByClassName("wrapper");
-    var dots=document.getElementsByClassName("dot");
-    if (n>slides.length){
 
-    }
-    if (n<1) {
-        
-    }
-}
 document.querySelector('.night').addEventListener('click', night);
 function night() {
     var body = document.querySelector('.content');
     var strip = document.querySelector('.strip');
     var link=document.querySelector('.ll');
-    
+    var flag=false;
     if (flag) {
 
         body.style.backgroundColor = 'antiquewhite';
-    body.style.color = 'black';
+    body.style.color = 'rgba(36, 32, 26, 0.85)';
     strip.style.backgroundColor = 'antiquewhite';
     strip.style.color = 'black';
     flag=false;
@@ -64,10 +48,15 @@ function night() {
     }
     else{
         flag=true;
-        body.style.backgroundColor = '#011012';
+        body.style.backgroundColor = 'rgba(36, 32, 26, 0.85)';
     body.style.color = 'antiquewhite';
-    strip.style.backgroundColor = '#011012';
+    strip.style.backgroundColor = 'rgba(36, 32, 26, 0.538)';
     strip.style.color = 'antiquewhite';
     link.style.color='goldenrod';
     }
 }
+
+
+
+
+    

@@ -4,7 +4,7 @@
 <head>
 
     <link rel="stylesheet" href="styles.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlantis</title>
@@ -22,11 +22,11 @@
          </div>
          <div class="strip">
             <button type="button" class="night" onclick="night()" >color</button>
-                 <div class="parts-restaurant"><a href=""><P>RESTAURANTS</P></a></div>
-                 <div class="parts-bar"><a href=""><p>BAR</p></a></div>
-                 <div class="parts-pool"><a href=""><p>POOL</p></a></div>
-                 <div class="parts-conference"><a href=""><p>CONFERENCE</p></a></div>
-                 <div class="parts-accomodation"><a href=""><p>ACCOMODATION</p></a></DIV>
+            <div class="parts-restaurant"><a class="ll" href="restaurant.html"><P>RESTAURANTS</P></a></div>
+            <div class="parts-bar"><a class="ll" href="bar.html"><p>BAR</p></a></div>
+            <div class="parts-pool" style="border-bottom:  solid 3px rgb(8, 56, 44) ;"><a class="ll" href="pool.html"><p>POOL</p></a></div>
+            <div class="parts-conference"><a class="ll" href="conference.html"><p>CONFERENCE</p></a></div>
+            <div class="parts-accomodation"><a class="ll" href="accomodation.html"><p>ACCOMODATION</p></a></DIV>
                     <div class="hover-accomodation">
                         <div>
                             <p class="in">We can host 300 residents</p>
@@ -71,60 +71,10 @@
             <p>
                 A stay at Atlantis The Royal is unlike anything you’ve ever imagined. This is what holiday dreams are made of.
             </p>
-            <p>BOOk NOW!!</p>
+            <a href="accomodation.html"><button class="form-button" type="button">BOOK NOW</button>
             <br>
         </div>
-        <div class="form" id="form">
-            <form action="" method="post">
-                <br>
-                <h2>BOOKING FORM</h2>
-                <hr>
-                <div class="set">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="visitor_name" placeholder="John Doe"  required>
-                </div>
-                <div class="set">
-                    <label for="email">Your E-mail</label>
-                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-                </div>
-                <div class="set">
-                    <label for="phone">Your Phone</label>
-                    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"  required>
-                </div>
-                <hr>
-                <div class="set inlined">
-                    <label for="adult">Adults</label>
-                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-                </div>
-                <div class="set inlined">
-                    <label for="child">Children</label>
-                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-                </div>
-                <div class="set inlined">
-                    <label for="checkin-date">Check-in Date</label>
-                    <input type="date" id="checkin-date" name="checkin" required>
-                </div>
-                <div class="set inlined">
-                    <label for="checkout-date">Check-out Date</label>
-                    <input type="date" id="checkout-date" name="checkout" required>
-                </div>
-                <div class="set">
-                    <label for="room-selection">Select Room Preference</label>
-                    <select id="room-selection" name="room_preference" required>
-                        <option value="">Choose a Room from the List</option>
-                        <option value="connecting">Connecting</option>
-                        <option value="adjoining">Adjoining</option>
-                        <option value="adjacent">Adjacent</option>
-                    </select>
-                </div>
-                <hr>
-                <div class="set">
-                    <label for="message">Anything Else?</label>
-                    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-                </div>
-                <button type="submit">Book The Rooms</button>
-            </form>
-        </div>
+     
         <div class="inlinediv">
                 <div class="king">
                     <h1>THE PALMSCAPE KINGROOM</h1>
@@ -140,12 +90,8 @@
             </div>  
         </div>  
 
-        <div class="pica">
-        <div class="pics">
-            <img src="images/roommmm.webp" alt="">
-        </div>
-        </div>
-    <div class="footer">
+       
+    <div class="footer" onload="footer.html">
 
     </div>
         
