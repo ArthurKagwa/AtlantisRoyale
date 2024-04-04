@@ -57,6 +57,25 @@ function night() {
 }
 
 
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slides img');
+const totalSlides = slides.length;
+
+function showSlide() {
+    slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${slideIndex * 100}%)`;
+    });
+}
+
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    showSlide();
+}
+
+function prevSlide() {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    showSlide();
+}
 
 
     
