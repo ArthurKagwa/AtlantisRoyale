@@ -22,6 +22,22 @@ div{
         z-index:10;  
         
     }
+    .location{
+        margin: auto;
+        width:50px;
+        cursor: pointer;
+    }
+    .location img{
+        object-fit: fill;
+        height: 50px;
+        width: 50px;
+    }
+    .map{
+        display: none;
+        position: relative;
+
+    }
+     
   .header h1{
     width: 70%;
     margin: auto ;
@@ -241,7 +257,6 @@ div[class^=hover] div{
     transition: transform 0.5s ease-in-out;
 }
 
-   
 
 .ptext{
     bottom: 20px;
