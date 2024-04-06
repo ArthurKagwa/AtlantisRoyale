@@ -9,6 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlantis</title>
     <script src="this.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var location = document.querySelector('.location');
+            var map = document.querySelector('.map');
+
+            location.addEventListener('click', function() {
+                var display = getComputedStyle(map).display;
+                map.style.display = display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
        
 </head>
 <body class="body" >
