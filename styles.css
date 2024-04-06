@@ -23,18 +23,27 @@ div{
         
     }
     .location{
-        margin: auto;
-        width:50px;
+        /* margin: auto; */
+        width:100px;
+        
+        left :100px;
+        
+    }
+    .locati{
         cursor: pointer;
     }
     .location img{
         object-fit: fill;
         height: 50px;
-        width: 50px;
+        width: 60px;
+       
+
     }
     .map{
         display: none;
         position: relative;
+        margin-left: 0;
+        left: 5%;
 
     }
    
@@ -200,17 +209,7 @@ div[class^=hover] div{
     z-index: 1;
 }
 /* gallery */
-.with-pics{
-    position: relative;
-    overflow: hidden;
-    background-color: antiquewhite;
-    max-height: 450px;
-    width:700px;
-    margin: auto;
-    padding: 0;
-    
 
-}
 .next ,.prev{
     height: 20px;
     background-color: #0f080882;
@@ -222,6 +221,9 @@ div[class^=hover] div{
     color: white;
     text-emphasis-style:bold ;
     cursor: pointer;
+}
+.prev{
+    left: 0;
 }
 .next{
     right: 0;
@@ -246,16 +248,28 @@ div[class^=hover] div{
     padding-top: 70px;
 }
 .slides{
-    display: flex;
-    
-    height: 450px;
-    /* object-fit: cover; */
-    width: 700px;
+   
+    padding: 0;
+    width:850px;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
     position: relative;
-    text-align: center;
-    overflow-x: scroll;
-    margin-top: 30px;
+    height: 500px;
+    background-color: antiquewhite;
+    object-fit: cover;
+}
+.slide{
+    padding: o;
+    display: none;
+    margin-top: 2px;
+    width: 750px;
+    object-fit: cover;
     transition: transform 0.5s ease-in-out;
+   
+}
+.slide img{
+    object-fit: cover;
 }
 
 
@@ -467,7 +481,7 @@ button {
     text-align:left;
     height:15px;;
     width:80%;
-    
+    margin: auto;
 }
 .roomlist h1{
     text-align:center;

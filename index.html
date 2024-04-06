@@ -26,8 +26,14 @@
     
         <div class="header">
             
-            <div class="name"><a href="index.html"><h1 calss="he">ATLANTIS ROYALE</h1></div></a> <a class="location"><img src="images/location.png" alt=""></a>
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.575973809055!2d55.12328757550831!3d25.13775553410549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f159cc0fdf48d%3A0x578328eca0f1ace5!2sConference%20Centre%20-%20Atlantis%20The%20Royal!5e1!3m2!1sen!2sug!4v1712257897522!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="name">
+                <a href="index.html"><h1 calss="he">ATLANTIS ROYALE</h1> </a>
+            </div>
+                <div class="location"><a class="locati"><img src="images/location.png" alt=""></a>
+            </div>
+            <div >
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.575973809055!2d55.12328757550831!3d25.13775553410549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f159cc0fdf48d%3A0x578328eca0f1ace5!2sConference%20Centre%20-%20Atlantis%20The%20Royal!5e1!3m2!1sen!2sug!4v1712257897522!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             
          </div>
          <div class="strip">
@@ -86,20 +92,49 @@
                 <a href="accomodation.html"><button class="form-button" type="button">BOOK NOW</button>
                 </a>
             </div>
-        </div>
-
-        <div class="with-pics">
-            
-            
-            <div class="slides" >
-            <a  onclick="prevSlide()" class="prev"><strong>&lt</strong></a>    
-                <img src="images/lobby.jpeg" alt="">
-                <img src="images/next.webp" alt="">
-                <img src="images/garden.jpeg" alt="">
-                
-            <a  onclick="nextSlide() "class="next"><strong>&gt</strong></a>   
-            </div>
+        </div>  
         
+            <script>
+                var slide;
+                var index = 0;
+                var slides ;
+
+                function showSlide(index) {
+                    if (index >= 0 && index < slides) {
+                        slide.forEach(function(slide) { slide.style.display = "none"; });
+                        slide[index].style.display = "block";
+                    }
+                }
+
+                function prevSlide() {
+                    if (index > 0) {
+                        index -= 1;
+                        showSlide(index);
+                    }
+                }
+
+                function nextSlide() {
+                    if (index < (slides - 1)) {
+                        index += 1;
+                        showSlide(index);
+                    }
+                }
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    slide = document.querySelectorAll('.slide');
+                    slides = slide.length;
+                    showSlide(index);
+                });
+            </script>
+        
+        <div class="slides">
+            
+        <a  onclick="prevSlide()" class="prev"><strong>&lt</strong></a>    
+            <div class="slide"><img src="images/image1.jpeg" alt=""></div>
+            <div class="slide"><img src="images/image2.jpeg" alt=""></div>
+            <div class="slide"><img src="images/image3.jpeg" alt=""></div>
+            
+        <a  onclick="nextSlide() "class="next"><strong>&gt</strong></a>   
         </div>
         
     <div class="footer">

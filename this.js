@@ -20,6 +20,9 @@ window.addEventListener('scroll', function() {
         strip.style.transition  = 'all 0.5s';
         word.style.fontSize = '30px';
         word.style.transition = '0.5s';
+        // if (flag=true){
+        //     strip.style.backgroundColor="rgba(36, 32, 26, 0.538)";
+        // }
 
     } else {
         content.style.position =  'static';
@@ -30,13 +33,13 @@ window.addEventListener('scroll', function() {
         word.style.fontSize = '90px';
     }
 });
-
+var flag;
 document.querySelector('.night').addEventListener('click', night);
 function night() {
     var body = document.querySelector('.content');
     var strip = document.querySelector('.strip');
     var link=document.querySelector('.ll');
-    var flag=false;
+     flag=false;
     if (flag) {
 
         body.style.backgroundColor = 'antiquewhite';
@@ -57,25 +60,9 @@ function night() {
 }
 
 
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slides img');
-const totalSlides = slides.length;
 
-function showSlide() {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${slideIndex * 100}%)`;
-    });
-}
 
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % totalSlides;
-    showSlide();
-}
 
-function prevSlide() {
-    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-    showSlide();
-}
 
 
     
