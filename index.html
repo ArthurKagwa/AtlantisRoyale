@@ -11,8 +11,14 @@
     <script src="this.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var location = document.querySelector('.location');
+            var location = document.querySelector('.locati');
             var map = document.querySelector('.map');
+            var phone=document.querySelector('.phone')
+            var contact=document.querySelector('.contact')
+            phone.addEventListener('click',function(){
+                var display = getComputedStyle(contact).display; 
+                contact.style.display = display === 'none' ? 'block' : 'none';
+            });
 
             location.addEventListener('click', function() {
                 var display = getComputedStyle(map).display;
@@ -29,12 +35,20 @@
             <div class="name">
                 <a href="index.html"><h1 calss="he">ATLANTIS ROYALE</h1> </a>
             </div>
-                <div class="location"><a class="locati"><img src="images/location.png" alt=""></a>
+            <div class="location">
+                    <a class="locati"><img src="images/location.png" alt=""></a>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.575973809055!2d55.12328757550831!3d25.13775553410549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f159cc0fdf48d%3A0x578328eca0f1ace5!2sConference%20Centre%20-%20Atlantis%20The%20Royal!5e1!3m2!1sen!2sug!4v1712257897522!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a class="phone"><img src="images/phone.png" alt=""></a>
+                    <div class="contact">
+                        <p>
+                            tel1 +4546 75656 786575
+                        </p>
+                        <p>
+                            tel2 +564 6554e 876
+                        </p>
+                    </div>
             </div>
-            <div >
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.575973809055!2d55.12328757550831!3d25.13775553410549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f159cc0fdf48d%3A0x578328eca0f1ace5!2sConference%20Centre%20-%20Atlantis%20The%20Royal!5e1!3m2!1sen!2sug!4v1712257897522!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            
+                
          </div>
          <div class="strip">
                 <button type="button" class="night" onclick="night()" >color</button>
@@ -67,9 +81,10 @@
                          </div>
                          <div class="hover-conference">
                             <div> <p class="in">We have two conference halls</p>
-                                <p class="in">With state of the art facilities</p><hr><br></div>
+                                <p class="in">With state of the art facilities</p><hr><br>
+                            </div>
                                 
-                         </div>
+                    </div>
                          
              <hr>
              <p class="ps" style="font-size: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">"Home away from home.. ps come with your money"</p>

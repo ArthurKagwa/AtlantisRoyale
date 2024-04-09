@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     if (window.pageYOffset > 30) {
         header.style.position = 'fixed';
         header.style.top = '0';
-        header.style.transition  = 'all 1.5s';
+        header.style.transition  = 'all 0.5s';
         header.style.padding = '10px';
         header.style.width = '100%';
         header.style.height = '40px'; 
@@ -33,29 +33,30 @@ window.addEventListener('scroll', function() {
         word.style.fontSize = '90px';
     }
 });
-var flag;
+
+var flag=false;
 document.querySelector('.night').addEventListener('click', night);
 function night() {
     var body = document.querySelector('.content');
     var strip = document.querySelector('.strip');
     var link=document.querySelector('.ll');
-     flag=false;
+    
+    
     if (flag) {
-
-        body.style.backgroundColor = 'antiquewhite';
+    body.style.backgroundColor = 'antiquewhite';
     body.style.color = 'rgba(36, 32, 26, 0.85)';
     strip.style.backgroundColor = 'antiquewhite';
     strip.style.color = 'black';
-    flag=false;
     link.style.color='black';
+    flag=false;
     }
-    else{
-        flag=true;
-        body.style.backgroundColor = 'rgba(36, 32, 26, 0.85)';
+    else{   
+    body.style.backgroundColor = 'rgba(36, 32, 26, 0.85)';
     body.style.color = 'antiquewhite';
-    strip.style.backgroundColor = 'rgba(36, 32, 26, 0.538)';
+    strip.style.backgroundColor = 'rgba(36, 32, 26)';
     strip.style.color = 'antiquewhite';
     link.style.color='goldenrod';
+    flag=true;
     }
 }
 
