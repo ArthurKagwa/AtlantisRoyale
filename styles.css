@@ -7,6 +7,8 @@ body {
 }
 div {
   box-sizing: border-box;
+  padding: 0%;
+  margin: auto;
 }
 
 .header {
@@ -21,24 +23,36 @@ div {
   z-index: 10;
 }
 .location {
-  /* margin: auto; */
-  width: 100px;
-
+  margin-left:20px;
+  width: 500px;
+display: inline-block;
+position: relative;
   left: 100px;
 }
 .locati {
   cursor: pointer;
+  display: inline-block;
+  width: 90px;
 }
-.location img {
+.phone{
+  display: inline-block;
+  width: 90px;
+}
+
+.strip img {
   object-fit: fill;
   height: 50px;
   width: 60px;
 }
+.our-location{
+  width: 70%;
+}
 .map {
-  display: none;
+  display: block;
   position: relative;
-  margin-left: 0;
-  left: 5%;
+  margin: auto;
+  padding: 30px;
+  padding-top: 0;
 }
 
 .header h1 {
@@ -181,7 +195,9 @@ div[class^="hover"] div {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+ 
 }
+
 .content {
   padding: 10px;
   margin-left: auto;
@@ -193,8 +209,7 @@ div[class^="hover"] div {
 }
 /* gallery */
 
-.next,
-.prev {
+.next,.prev {
   height: 20px;
   background-color: #0f080882;
 
@@ -208,6 +223,7 @@ div[class^="hover"] div {
 }
 .prev {
   left: 0;
+  border-radius:0 10px 10px 0;
 }
 .next {
   right: 0;
@@ -216,9 +232,10 @@ div[class^="hover"] div {
 .in-message {
   width: 70%;
   margin: auto;
-  background-color: #0f08089f;
+  background-color:rgba(250, 235, 215, 0.592);
   padding: 50px;
   color: white;
+  color: black;
 }
 .message {
   background-image: url(images/royale.jpeg);
@@ -239,18 +256,23 @@ div[class^="hover"] div {
   overflow: hidden;
   position: relative;
   height: 500px;
-  background-color: antiquewhite;
-  object-fit: cover;
+  
+  
+  
 }
 .slide {
   padding: o;
   display: none;
   margin-top: 2px;
-  width: 750px;
+  width:100%;
+  height: 100%;
+
   object-fit: cover;
   transition: transform 0.5s ease-in-out;
 }
 .slide img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -388,8 +410,8 @@ div[class^="hover"] div {
 }
 .form {
   padding: 20px;
-  max-height: 500px;
-  overflow-y: auto;
+  /* max-height: 500px; */
+  /* overflow-y: auto; */
   width: 75%;
   margin: auto;
   border: solid goldenrod 3px;
@@ -477,21 +499,36 @@ button {
     width: 500px;
     height:400px;
     margin: auto;
-    display:inline-block;
-    /* overflow-x: auto; */
+    display:inline-flex;
+    overflow-x: auto;
 
 }
 .food img{
     width: 100%;
     height: 100%;
     object-fit:cover;
-    /* display: inline-; */
 }
 .gallery{
-    display: inline-flex;
     width:700px;
-    /* overflow-x: scroll; */
-    /* height: 600px; */
     margin: auto;
     
+}
+.footer{
+  background-color: rgb(125, 87, 36);
+  padding-left: 100px;
+  padding-right:100px ;
+  display: flex;
+  height: 500px;
+}
+.footer-col{
+  flex:1;
+  padding: 20px;
+  text-align: left;
+  font-size: larger;
+  margin-right: 10px; 
+  background-color: rgba(132, 127, 35, 0.201);
+  width: 40%;
+
+
+
 }

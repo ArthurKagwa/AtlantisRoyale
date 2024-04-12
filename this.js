@@ -20,9 +20,7 @@ window.addEventListener('scroll', function() {
         strip.style.transition  = 'all 0.5s';
         word.style.fontSize = '30px';
         word.style.transition = '0.5s';
-        // if (flag=true){
-        //     strip.style.backgroundColor="rgba(36, 32, 26, 0.538)";
-        // }
+       
 
     } else {
         content.style.position =  'static';
@@ -34,8 +32,9 @@ window.addEventListener('scroll', function() {
     }
 });
 
-var flag=false;
+
 document.querySelector('.night').addEventListener('click', night);
+var flag=false;
 function night() {
     var body = document.querySelector('.content');
     var strip = document.querySelector('.strip');
