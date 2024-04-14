@@ -49,10 +49,9 @@ position: relative;
 }
 .map {
   display: block;
-  position: relative;
+  position: absolute;
   margin: auto;
   padding: 30px;
-  padding-top: 0;
 }
 
 .header h1 {

@@ -46,7 +46,7 @@ function night() {
     body.style.color = 'rgba(36, 32, 26, 0.85)';
     strip.style.backgroundColor = 'antiquewhite';
     strip.style.color = 'black';
-    link.style.color='black';
+    // link.style.color='black';
     flag=false;
     }
     else{   
@@ -54,7 +54,7 @@ function night() {
     body.style.color = 'antiquewhite';
     strip.style.backgroundColor = 'rgba(36, 32, 26)';
     strip.style.color = 'antiquewhite';
-    link.style.color='goldenrod';
+    // link.style.color='goldenrod';
     flag=true;
     }
 }

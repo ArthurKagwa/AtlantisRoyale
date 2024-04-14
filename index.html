@@ -9,23 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlantis</title>
     <script src="this.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var location = document.querySelector('.locati');
-            var map = document.querySelector('.map');
-            var phone=document.querySelector('.phone')
-            var contact=document.querySelector('.contact')
-            phone.addEventListener('click',function(){
-                var display = getComputedStyle(contact).display; 
-                contact.style.display = display === 'none' ? 'block' : 'none';
-            });
-
-            location.addEventListener('click', function() {
-                var display = getComputedStyle(map).display;
-                map.style.display = display === 'none' ? 'block' : 'none';
-            });
-        });
-    </script>
+    
        
 </head>
 <body class="body" >
